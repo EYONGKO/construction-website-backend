@@ -1,0 +1,38 @@
+[
+  {
+    "id": "solar-solutions",
+    "title": "Solar Solutions",
+    "description": "Premium solar panel installation for sustainable off-grid power with dependable technical support.",
+    "icon": "solar"
+  },
+  {
+    "id": "electrical-cabling",
+    "title": "Electrical and Cabling",
+    "description": "Safe house wiring, lighting, and structured cabling solutions for residential and commercial projects.",
+    "icon": "power"
+  },
+  {
+    "id": "painting-services",
+    "title": "Painting Services",
+    "description": "Professional interior and exterior painting with clean finishing and durable material selection.",
+    "icon": "paint"
+  },
+  {
+    "id": "plumbing-services",
+    "title": "Plumbing",
+    "description": "Practical plumbing installation and maintenance for new construction, upgrades, and repair work.",
+    "icon": "pipe"
+  },
+  {
+    "id": "building-construction",
+    "title": "Building Construction",
+    "description": "End-to-end building works from groundwork to finishing for homes, offices, and commercial spaces.",
+    "icon": "build"
+  },
+  {
+    "id": "pop-installation",
+    "title": "POP Installation",
+    "description": "Modern plaster of Paris ceiling and wall finishing for polished interior spaces.",
+    "icon": "build"
+  }
+]
