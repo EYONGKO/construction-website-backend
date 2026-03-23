@@ -17,7 +17,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Use OpenJDK runtime image
-FROM openjdk:11-jre
+FROM openjdk:11
 
 # Set working directory
 WORKDIR /app
