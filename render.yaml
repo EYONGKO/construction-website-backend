@@ -10,7 +10,7 @@ services:
       - key: PORT
         value: 8080
       - key: MONGODB_URI
-        sync: false
+        value: mongodb+srv://eyongkomatchfire_db_user:Eyongko55@cluster0.6ehowxm.mongodb.net/construction_db?retryWrites=true&w=majority&appName=Cluster0
       - key: MONGODB_DATABASE
         value: construction_db
       - key: SPRING_PROFILES_ACTIVE

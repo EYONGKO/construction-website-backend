@@ -8,7 +8,7 @@ WORKDIR /app
 COPY pom.xml .
 
 # Download dependencies
-RUN mvn dependency:go-offline
+RUN mvn dependency:go-offline || true
 
 # Copy source code
 COPY src ./src
@@ -25,11 +25,8 @@ WORKDIR /app
 # Copy the jar file from build stage
 COPY --from=build /app/target/*.jar app.jar
 
-# Expose port
+# Expose port (Render will set PORT env var)
 EXPOSE 8080
-
-# Add health check endpoint
-RUN mkdir -p /app/actuator/health && echo "OK" > /app/actuator/health
 
 # Run the application
 CMD ["java", "-jar", "app.jar"]
