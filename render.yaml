@@ -1,0 +1,17 @@
+services:
+  # Backend API Service
+  - type: web
+    name: construction-backend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DATABASE
+        value: construction_db
+      - key: SPRING_PROFILES_ACTIVE
+        value: production
